@@ -1,0 +1,8 @@
+<div>Exemple de formControl, Ecrire dans le formulaire met à jour le champ value de façon dynamique</div>
+<label>
+  Name:
+    <input type="text" [formControl]="name">
+</label>
+<p>
+  Value: {{ name.value }}
+</p>

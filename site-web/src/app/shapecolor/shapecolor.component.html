@@ -1,0 +1,10 @@
+<p>
+  Utilisation des reactive form pour personaliser l'interface d'une page
+</p>
+<input type="radio" [formControl]="shapecolor" value="redsquare"> red<br>
+<input type="radio" [formControl]="shapecolor" value="bluecircle"> blue<br>
+<input type="radio" [formControl]="shapecolor" value="greenstuff"> green<br>
+
+Value: {{shapecolor.value}}
+<h2>Square CSS</h2>
+<div class={{shapecolor.value}}></div>
